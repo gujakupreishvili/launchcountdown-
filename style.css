@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #1D1E28;
+  background-image: url(./bg-stars.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.launching{
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 142px;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 6.13636px;
+  text-transform: uppercase;
+  width: 327px;
+  color: #FFFFFF;
+  margin-bottom: 54px;
+}
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.rect-div{
+  display: flex;
+  flex-direction: column;
+  background-color:  #343650;
+  width: 70px;
+  height: 66px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 71px;
+  /* or 197% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1.08px;
+  color: #FB5E84;
+  margin-left: 16px;
+}
+.days{
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 2.95937px;
+  color: #8385A9;
+  text-align: center;
+}
+footer{
+  position: absolute;
+  bottom: 0px;
+}
+.mount{
+  width: 100%;
+  height: 168px;
+}
+.footer-img{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+svg:hover path{
+  fill: #FB5E84;
+  cursor: pointer;
+  transition: 0.35s;
+}
+@media (min-width:1024px){
+  .launching{
+    font-size: 22px;
+    width: 431px;
+    margin-bottom: 104px;
+  }
+  .rect-div{
+    width: 148px;
+    height: 132px;
+    font-size: 80px;
+  }
+  .days{
+    font-size: 14px;
+  }
+  .mount{
+    width: 1400px;
+  }
+}
+@media (min-width:1940px){
+  .mount{
+    width: 1600px;
+  }
+}
